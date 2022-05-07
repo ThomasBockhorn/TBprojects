@@ -12,18 +12,14 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import GuestLayout from "@/Layouts/Guest";
+import { Head } from "@inertiajs/inertia-vue3";
 
-export default {
-  props: {
+defineProps({
     projects: Object,
-  },
+});
 
-   components:{
-       GuestLayout
-   }
-};
 </script>
 
 <style scoped>

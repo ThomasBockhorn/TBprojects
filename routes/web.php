@@ -16,17 +16,31 @@ use Inertia\Inertia;
 |
 */
 
+//-------------------- Guest Pages --------------------------------------//
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register')
-    ]);
+    return Inertia::render('Welcome');
+       
 });
 
+Route::resource('projects', ProjectController::class);
+
+Route::get('/about', function() {
+    return Inertia::render('About');
+});
+
+Route::get('/contact', function() {
+    return Inertia::render('Contact');
+});
+
+Route::get('/resume', function() {
+    return Inertia::render('Resume');
+});
+
+
+//---------------- Admin Pages ---------------------------------------------//
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::resource('projects', ProjectController::class);
 
 require __DIR__.'/auth.php';
