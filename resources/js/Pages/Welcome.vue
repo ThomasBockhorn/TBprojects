@@ -1,19 +1,15 @@
 <script setup>
 import { Head, Link } from "@inertiajs/inertia-vue3";
-import Navbar from "../Components/Frontend/Navbar/Navbar.vue";
-
-
+import GuestLayout from "@/Layouts/Guest";
 </script>
 
 <template>
   <div>
     <Head title="Welcome" />
-    <Navbar />
 
-  
+    <GuestLayout> </GuestLayout>
   </div>
 </template>
 
 <style scoped>
-
 </style>
