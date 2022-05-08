@@ -1,13 +1,15 @@
 <script setup>
-    import NavBar from "@/Components/Frontend/Navbar/Navbar";
+    import SideBar from "@/Components/Frontend/Sidebar/Sidebar";
+    import Footer from "@/Components/Frontend/Footer/Footer";
     </script>
 
 <template>
     <div >
-        <NavBar />
+        <SideBar />
         <!--Page Content-->
         <main>
             <slot />
         </main>
+        <Footer />
     </div>
 </template>
