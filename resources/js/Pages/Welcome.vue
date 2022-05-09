@@ -7,7 +7,9 @@ import GuestLayout from "@/Layouts/Guest";
   <div>
     <Head title="Welcome" />
 
-    <GuestLayout> </GuestLayout>
+    <GuestLayout> 
+      <div class="bg-white w-100 h-40"></div>
+    </GuestLayout>
   </div>
 </template>
 
