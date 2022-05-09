@@ -7,17 +7,9 @@ import GuestLayout from "@/Layouts/Guest";
   <div>
     <Head title="Welcome" />
 
-    <GuestLayout> 
-        <div id="image" class="bg-cover bg-no-repeat bg-center">image</div>
-
-    </GuestLayout>
+    <GuestLayout> </GuestLayout>
   </div>
 </template>
 
 <style scoped>
-#image{
-  background-image: url('../../assets/imgs/pexels-will-mu.jpg');
-  width: 100%;
-  height: 100vh;
-}
 </style>
