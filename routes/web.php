@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProjectController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Models\Project;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,8 @@ use Inertia\Inertia;
 
 //-------------------- Guest Pages --------------------------------------//
 Route::get('/', function () {
-    return Inertia::render('Welcome');
+$projects = Project::all();
+    return Inertia::render('Welcome', ['projects' => $projects]);
        
 });
 
