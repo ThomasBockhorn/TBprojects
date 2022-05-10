@@ -19,22 +19,21 @@ use App\Http\Controllers\ProjectController;
 
 //-------------------- Guest Pages --------------------------------------//
 Route::get('/', function () {
-$projects = Project::all();
+    $projects = Project::all();
     return Inertia::render('Welcome', ['projects' => $projects]);
-       
 });
 
 Route::resource('projects', ProjectController::class);
 
-Route::get('/about', function() {
+Route::get('/about', function () {
     return Inertia::render('About');
 });
 
-Route::get('/contact', function() {
+Route::get('/contact', function () {
     return Inertia::render('Contact');
 });
 
-Route::get('/resume', function() {
+Route::get('/resume', function () {
     return Inertia::render('Resume');
 });
 
@@ -45,4 +44,4 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
