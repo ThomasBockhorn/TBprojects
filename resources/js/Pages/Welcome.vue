@@ -14,11 +14,11 @@ defineProps({
     <GuestLayout>
       <div id="main" class="bg-white mt-20">
         <h3 class="text-center text-4xl">Projects</h3>
-        <div>
+        <div class="flex flex-row flex-wrap m-20 p-10 justify-center">
           <div
             v-for="project in projects"
             :key="project.id"
-            class="max-w-sm rounded overflow-hidden shadow-lg"
+            class="max-w-sm rounded overflow-hidden shadow-lg m-5"
           >
             <img
               class="w-full"

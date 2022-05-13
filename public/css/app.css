@@ -668,6 +668,18 @@ select {
 .m-5 {
   margin: 1.25rem;
 }
+.m-2 {
+  margin: 0.5rem;
+}
+.m-6 {
+  margin: 1.5rem;
+}
+.m-10 {
+  margin: 2.5rem;
+}
+.m-20 {
+  margin: 5rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -842,6 +854,15 @@ select {
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.basis-auto {
+  flex-basis: auto;
+}
+.basis-10 {
+  flex-basis: 2.5rem;
+}
+.basis-96 {
+  flex-basis: 24rem;
 }
 .origin-top-left {
   transform-origin: top left;
