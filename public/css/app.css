@@ -680,6 +680,9 @@ select {
 .m-20 {
   margin: 5rem;
 }
+.m-3 {
+  margin: 0.75rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1171,6 +1174,10 @@ select {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .font-medium {
   font-weight: 500;
