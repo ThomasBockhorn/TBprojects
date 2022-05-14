@@ -19,15 +19,10 @@ use App\Http\Controllers\ProjectController;
 
 //-------------------- Guest Pages --------------------------------------//
 Route::get('/', function () {
-    $projects = Project::all();
-    return Inertia::render('Welcome', ['projects' => $projects]);
+    return Inertia::render('Welcome');
 });
 
-Route::resource('projects', ProjectController::class);
-
-Route::get('/about', function () {
-    return Inertia::render('About');
-});
+Route::resource('/projects', ProjectController::class);
 
 Route::get('/contact', function () {
     return Inertia::render('Contact');
