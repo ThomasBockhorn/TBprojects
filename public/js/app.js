@@ -24850,7 +24850,9 @@ var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
-    "class": "block p-4 hover:bg-amber-400",
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
+      'bg-amber-400': _ctx.$page.url === '/'
+    }]),
     href: "/",
     "preserve-scroll": ""
   }, {
@@ -24860,8 +24862,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
-    "class": "block p-4 hover:bg-amber-400",
+  }, 8
+  /* PROPS */
+  , ["class"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
+      'bg-amber-400': _ctx.$page.url.startsWith('/projects')
+    }]),
     href: "/projects",
     "preserve-scroll": ""
   }, {
@@ -24871,8 +24877,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
-    "class": "block p-4 hover:bg-amber-400",
+  }, 8
+  /* PROPS */
+  , ["class"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
+      'bg-amber-400': _ctx.$page.url === '/contact'
+    }]),
     href: "/contact",
     "preserve-scroll": ""
   }, {
@@ -24882,8 +24892,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
-    "class": "block p-4 hover:bg-amber-400",
+  }, 8
+  /* PROPS */
+  , ["class"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
+      'bg-amber-400': _ctx.$page.url === '/resume'
+    }]),
     href: "/resume",
     "preserve-scroll": ""
   }, {
@@ -24893,7 +24907,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })])]);
+  }, 8
+  /* PROPS */
+  , ["class"])])]);
 }
 
 /***/ }),
