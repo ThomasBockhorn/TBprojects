@@ -26214,17 +26214,23 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "text-center text-4xl"
 }, "Profile"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "m-20 p-10"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-2xl m-3"
+  "class": "m-20"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "flex justify-center h-80 w-30 mb-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "/images/ThomasBockhorn.jpg",
+  alt: "Thomas Bockhorn",
+  "class": "max-w-fit max-h-fit rounded-full"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-2xl m-5"
 }, " Hi, my name is Thomas Bockhorn. I'm a full stack web developer. Building websites and web applications is fun and challenging. Websites can also be creative endevors that inspire. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-2xl m-3"
+  "class": "text-2xl m-5"
 }, " I first got into web development with an invitation by Udacity including a Google scholarship for their front-end web development program. After taking a few lessions, I became hooked on all things web development. To further my education, I took and continue to take Udemy courses for both front-end and back-end development. The beauty of both technical and asthetic spheres and how they interacted together fascinated me. Just like architecture, good websites need to consider both form and function. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-2xl m-3"
+  "class": "text-2xl m-5"
 }, " My other source of inspiration is history and the art of telling stories. I received a Master's degree in history. Good historical narratives and websites share how important the central theme is and how essential the human connection is. History and websites can be dry and boring, or can be interesting and compelling. It all depends on the content. I make compelling websites that garner viewer's attention. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-2xl m-3"
-}, "I work with Java, Spring, PHP, Laravel, CSS, HTML, Vue, MySql."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-2xl m-3"
+  "class": "text-2xl m-5"
+}, " I work with Java, Spring, PHP, Laravel, CSS, HTML, Vue, MySql. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-2xl m-5"
 }, "-Thomas Bockhorn")])], -1
 /* HOISTED */
 );
