@@ -7,7 +7,7 @@
       <div class="flex justify-center items-center">
         <div class="text-center">
           <h1 class="text-5xl font-bold">Thomas Bockhorn</h1>
-          <hr />
+          <hr/>
           <h2 class="text-5xl">Web Developer</h2>
           <div class="mt-16 flex justify-center">
             <a href="#main"
@@ -44,5 +44,9 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+hr{
+     border-top: 5px solid black;
 }
 </style>

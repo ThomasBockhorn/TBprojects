@@ -4,13 +4,13 @@ import GuestLayout from "@/Layouts/Guest";
 </script>
 
 <template>
-  <div class="bg-amber-100">
+  <div id="zig-zag" class="bg-amber-200">
     <Head title="Welcome" />
     <GuestLayout>
       <div id="main" class="mt-20">
         <h3 class="text-center text-7xl">Profile</h3>
         <div class="m-20">
-          <div class="flex justify-center h-80 w-30 mb-8"> 
+          <div class="flex justify-center h-80 w-30 mb-8">
             <img
               src="/images/ThomasBockhorn.jpg"
               alt="Thomas Bockhorn"
@@ -52,4 +52,13 @@ import GuestLayout from "@/Layouts/Guest";
 </template>
 
 <style scoped>
+#zig-zag {
+  background-image: linear-gradient(135deg, #F5E390 25%, transparent 25%),
+    linear-gradient(225deg, #F5E390 25%, transparent 25%),
+    linear-gradient(315deg, #F5E390 25%, transparent 25%),
+    linear-gradient(45deg, #F5E390 25%, transparent 25%);
+  background-position: -30px 0, -30px 0, 0 0, 0 0;
+  background-size: 60px 60px;
+  background-repeat: repeat;
+}
 </style>

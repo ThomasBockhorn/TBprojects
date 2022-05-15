@@ -847,6 +847,9 @@ select {
 .w-12 {
   width: 3rem;
 }
+.w-px {
+  width: 1px;
+}
 .max-w-xl {
   max-width: 36rem;
 }
@@ -981,6 +984,9 @@ select {
 }
 .border-l-4 {
   border-left-width: 4px;
+}
+.border-t-2 {
+  border-top-width: 2px;
 }
 .border-gray-300 {
   --tw-border-opacity: 1;
