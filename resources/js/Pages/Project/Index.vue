@@ -2,7 +2,7 @@
   <div id="zig-zag" class="bg-amber-200">
     <GuestLayout>
       <div id="main" class="mt-20">
-        <h3 class="text-center text-4xl">Projects</h3>
+        <h3 class="text-center text-7xl">Projects</h3>
         <div class="flex flex-row flex-wrap m-20 p-10 justify-center">
           <div
             v-for="project in projects.data"
