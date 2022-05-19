@@ -2,136 +2,121 @@
   <div>
     <Head title="Contact" />
     <GuestLayout>
-      <div id="main" class="mt-50 sm:mt-0">
-        <div class="md:grid md:grid-cols-3 md:gap-6">
-          <div class="mt-5 md:mt-0 md:col-span-2">
-            <form action="#" method="POST">
-              <div class="shadow overflow-hidden sm:rounded-md">
-                <div class="px-4 py-5 bg-white sm:p-6">
-                  <div class="grid grid-cols-6 gap-6">
-                    <div class="col-span-6 sm:col-span-3">
-                      <label
-                        for="first-name"
-                        class="block text-sm font-medium text-gray-700"
-                        >First name</label
-                      >
-                      <input
-                        type="text"
-                        name="first-name"
-                        id="first-name"
-                        autocomplete="given-name"
-                        class="
-                          mt-1
-                          focus:ring-indigo-500 focus:border-indigo-500
-                          block
-                          w-full
-                          shadow-sm
-                          sm:text-sm
-                          border-gray-300
-                          rounded-md
-                        "
-                      />
-                    </div>
-
-                    <div class="col-span-6 sm:col-span-3">
-                      <label
-                        for="last-name"
-                        class="block text-sm font-medium text-gray-700"
-                        >Last name</label
-                      >
-                      <input
-                        type="text"
-                        name="last-name"
-                        id="last-name"
-                        autocomplete="family-name"
-                        class="
-                          mt-1
-                          focus:ring-indigo-500 focus:border-indigo-500
-                          block
-                          w-full
-                          shadow-sm
-                          sm:text-sm
-                          border-gray-300
-                          rounded-md
-                        "
-                      />
-                    </div>
-
-                    <div class="col-span-6 sm:col-span-4">
-                      <label
-                        for="email-address"
-                        class="block text-sm font-medium text-gray-700"
-                        >Email address</label
-                      >
-                      <input
-                        type="text"
-                        name="email-address"
-                        id="email-address"
-                        autocomplete="email"
-                        class="
-                          mt-1
-                          focus:ring-indigo-500 focus:border-indigo-500
-                          block
-                          w-full
-                          shadow-sm
-                          sm:text-sm
-                          border-gray-300
-                          rounded-md
-                        "
-                      />
-                    </div>
-                    <div class="col-span-6 sm:col-span-4">
-                      <label
-                        for="comment"
-                        class="block text-sm font-medium text-gray-700"
-                        >Comment</label
-                      >
-                      <textArea
-                        type="text"
-                        name="comment"
-                        class="
-                          mt-1
-                          focus:ring-indigo-500 focus:border-indigo-500
-                          block
-                          w-full
-                          shadow-sm
-                          sm:text-sm
-                          border-gray-300
-                          rounded-md
-                        "
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                  <button
-                    type="submit"
-                    class="
-                      inline-flex
-                      justify-center
-                      py-2
-                      px-4
-                      border border-transparent
-                      shadow-sm
-                      text-sm
-                      font-medium
-                      rounded-md
-                      text-white
-                      bg-indigo-600
-                      hover:bg-indigo-700
-                      focus:outline-none
-                      focus:ring-2
-                      focus:ring-offset-2
-                      focus:ring-indigo-500
-                    "
-                  >
-                    Save
-                  </button>
-                </div>
+      <div id="main">
+        <h3 class="text-center text-7xl mt-5">Contact</h3>
+          <div class="mb-20 mt-20 flex flex-col justify-center items-center">
+            <form class="block p-6 rounded-lg shadow-lg bg-white w-2/4">
+              <div class="form-group mb-6">
+                <input
+                  type="text"
+                  class="
+                    form-control
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700
+                    focus:bg-white
+                    focus:border-blue-600
+                    focus:outline-none
+                  "
+                  id="exampleInput7"
+                  placeholder="Name"
+                />
               </div>
+              <div class="form-group mb-6">
+                <input
+                  type="email"
+                  class="
+                    form-control
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700
+                    focus:bg-white
+                    focus:border-blue-600
+                    focus:outline-none
+                  "
+                  id="exampleInput8"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="form-group mb-6">
+                <textarea
+                  class="
+                    form-control
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700
+                    focus:bg-white
+                    focus:border-blue-600
+                    focus:outline-none
+                  "
+                  id="exampleFormControlTextarea13"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="
+                  w-full
+                  px-6
+                  py-2.5
+                  bg-blue-600
+                  text-white
+                  font-medium
+                  text-xs
+                  leading-tight
+                  uppercase
+                  rounded
+                  shadow-md
+                  hover:bg-blue-700 hover:shadow-lg
+                  focus:bg-blue-700
+                  focus:shadow-lg
+                  focus:outline-none
+                  focus:ring-0
+                  active:bg-blue-800 active:shadow-lg
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+              >
+                Send
+              </button>
             </form>
           </div>
-        </div>
       </div>
     </GuestLayout>
   </div>
