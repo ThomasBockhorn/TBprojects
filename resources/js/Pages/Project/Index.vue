@@ -1,5 +1,5 @@
 <template>
-  <div id="zig-zag" class="bg-amber-200">
+  <div class="bg-amber-50">
     <GuestLayout>
       <div id="main" class="mt-20">
         <h3 class="text-center text-7xl">Projects</h3>
@@ -40,13 +40,5 @@ defineProps({
 </script>
 
 <style scoped>
-#zig-zag {
-  background-image: linear-gradient(135deg, #F5E390 25%, transparent 25%),
-    linear-gradient(225deg, #F5E390 25%, transparent 25%),
-    linear-gradient(315deg, #F5E390 25%, transparent 25%),
-    linear-gradient(45deg, #F5E390 25%, transparent 25%);
-  background-position: -30px 0, -30px 0, 0 0, 0 0;
-  background-size: 60px 60px;
-  background-repeat: repeat;
-}
+
 </style>
