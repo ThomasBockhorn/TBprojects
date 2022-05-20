@@ -1139,6 +1139,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(255 251 235 / var(--tw-bg-opacity));
 }
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -1272,6 +1276,12 @@ select {
 }
 .pt-20 {
   padding-top: 5rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
 }
 .text-left {
   text-align: left;
