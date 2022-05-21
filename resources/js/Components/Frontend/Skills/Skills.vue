@@ -1,10 +1,9 @@
 <template>
-    <div>
-            <div class="bg-green-100 pt-5">
+  <div>
+    <div class="bg-green-100 pt-5">
       <div id="skills">
         <h4 class="text-center text-4xl">Skills</h4>
-        <div class="grid grid-cols-5 gap-4 mt-10 px-10">
-
+        <div class="grid grid-cols-5 gap-4 mt-10 mb-10 px-10">
           <h6 class="text-center">PHP</h6>
           <div>
             <ul class="flex justify-start">
@@ -209,7 +208,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -393,7 +392,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -410,7 +409,7 @@
                   ></path>
                 </svg>
               </li>
-               <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -503,7 +502,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -577,7 +576,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -594,7 +593,7 @@
                   ></path>
                 </svg>
               </li>
-               <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -687,7 +686,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -761,7 +760,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -778,7 +777,7 @@
                   ></path>
                 </svg>
               </li>
-               <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -871,7 +870,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -925,7 +924,6 @@
             </ul>
           </div>
 
-
           <h6 class="text-center">Algorithims</h6>
           <div>
             <ul class="flex justify-start">
@@ -946,7 +944,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -963,7 +961,7 @@
                   ></path>
                 </svg>
               </li>
-               <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1056,7 +1054,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1110,7 +1108,6 @@
             </ul>
           </div>
 
-
           <h6 class="text-center">MySql</h6>
           <div>
             <ul class="flex justify-start">
@@ -1131,7 +1128,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1148,7 +1145,7 @@
                   ></path>
                 </svg>
               </li>
-               <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1241,7 +1238,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1295,7 +1292,6 @@
             </ul>
           </div>
 
-
           <h6 class="text-center">Teaching</h6>
           <div>
             <ul class="flex justify-start">
@@ -1316,7 +1312,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1333,7 +1329,7 @@
                   ></path>
                 </svg>
               </li>
-               <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1426,7 +1422,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1480,7 +1476,7 @@
             </ul>
           </div>
 
-           <h6 class="text-center">Researching</h6>
+          <h6 class="text-center">Researching</h6>
           <div>
             <ul class="flex justify-start">
               <li>
@@ -1517,7 +1513,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1610,7 +1606,7 @@
                   ></path>
                 </svg>
               </li>
-             <li>
+              <li>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -1665,8 +1661,8 @@
           </div>
         </div>
       </div>
-      </div>
     </div>
+  </div>
 </template>
 
 <script setup>
