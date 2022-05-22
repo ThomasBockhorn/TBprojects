@@ -6,7 +6,11 @@
         <div id="main">
           <h3 class="text-center text-7xl pt-10">Contact</h3>
           <div class="h-screen flex flex-col justify-center items-center">
-            <form class="block p-6 rounded-lg shadow-lg bg-white w-2/4">
+            <form
+              ref="form"
+              class="block p-6 rounded-lg shadow-lg bg-white w-2/4"
+              @submit.prevent="sendEmail"
+            >
               <div class="form-group mb-6">
                 <input
                   type="text"
@@ -32,6 +36,8 @@
                   "
                   id="exampleInput7"
                   placeholder="Name"
+                  name="name"
+                  v-model="name"
                 />
               </div>
               <div class="form-group mb-6">
@@ -59,6 +65,8 @@
                   "
                   id="exampleInput8"
                   placeholder="Email address"
+                  name="email"
+                  v-model="email"
                 />
               </div>
               <div class="form-group mb-6">
@@ -86,10 +94,12 @@
                   id="exampleFormControlTextarea13"
                   rows="3"
                   placeholder="Message"
+                  name="message"
+                  v-model="message"
                 ></textarea>
               </div>
 
-              <button
+              <input
                 type="submit"
                 class="
                   w-full
@@ -113,9 +123,8 @@
                   duration-150
                   ease-in-out
                 "
-              >
-                Send
-              </button>
+                value="Send"
+              />
             </form>
           </div>
         </div>
@@ -124,9 +133,48 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import GuestLayout from "@/Layouts/Guest";
 import { Head } from "@inertiajs/inertia-vue3";
+import emailjs from "@emailjs/browser";
+
+export default {
+  data(){
+      return{
+        name: "",
+        email: "",
+        message: ""
+      }
+    },
+  components: {
+    GuestLayout,
+    Head,
+  },
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs
+          .sendForm(
+            "tecktonetMailService",
+            "template_sx0lr8w",
+            this.$refs.form,
+            "user_6QEusrvbUjGdKTzVBP8Xv"
+          )
+          .then((result) => {
+            console.log("Success!", result.text);
+          })
+          .catch((error) => {
+            console.log("Failed...", error.text);
+          });
+      } catch (error) {
+        console.log({ error });
+      }
+      this.name = "";
+      this.email = "";
+      this.message = "";
+    },
+  },
+};
 </script>
 
 <style scoped>
