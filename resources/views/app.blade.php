@@ -23,4 +23,6 @@
         @inertia
 
     </body>
+    <script src="https://unpkg.com/vue-star-rating@next/dist/VueStarRating.umd.min.js"></script>
+
 </html>
