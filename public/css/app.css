@@ -1313,6 +1313,12 @@ select {
 .pt-5 {
   padding-top: 1.25rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .text-left {
   text-align: left;
 }

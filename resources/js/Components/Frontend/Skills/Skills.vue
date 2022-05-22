@@ -3,7 +3,7 @@
     <div class="bg-green-100 pt-5">
       <div id="skills">
         <h4 class="text-center text-4xl">Skills</h4>
-        <div class="grid grid-cols-5 gap-4 mt-10 mb-10 px-10">
+        <div class="grid grid-cols-5 gap-4 mt-10 pb-20 px-10">
           <h6 class="text-center">PHP</h6>
           <div>
             <ul class="flex justify-start">
@@ -1664,8 +1664,20 @@
     </div>
   </div>
 </template>
-
-<script setup>
+   
+<script>
+export default {
+  data() {
+    return {
+      skills: [
+        {
+          name: "PHP",
+          filled_stars: 3,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
