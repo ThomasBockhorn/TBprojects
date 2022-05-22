@@ -25234,8 +25234,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
       'bg-amber-400': _ctx.$page.url === '/'
     }]),
-    href: "/",
-    "preserve-scroll": ""
+    href: "/"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_3];
@@ -25249,8 +25248,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
       'bg-amber-400': _ctx.$page.url.startsWith('/projects')
     }]),
-    href: "/projects",
-    "preserve-scroll": ""
+    href: "/projects"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_4];
@@ -25264,8 +25262,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
       'bg-amber-400': _ctx.$page.url === '/contact'
     }]),
-    href: "/contact",
-    "preserve-scroll": ""
+    href: "/contact"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_5];
@@ -25279,8 +25276,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
       'bg-amber-400': _ctx.$page.url === '/resume'
     }]),
-    href: "/resume",
-    "preserve-scroll": ""
+    href: "/resume"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_6];
@@ -25294,8 +25290,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
       'bg-amber-400': _ctx.$page.url === '/#skills'
     }]),
-    href: "/#skills",
-    "preserve-scroll": ""
+    href: "/#skills"
   }, "Skills", 2
   /* CLASS */
   )])]);
