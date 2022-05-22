@@ -2,7 +2,7 @@
   <div class="bg-amber-50">
     <GuestLayout>
       <div id="main">
-        <h3 class="text-center text-7xl">Projects</h3>
+        <h3 class="text-center text-7xl pt-10">Projects</h3>
         <div class="flex flex-row flex-wrap m-20 p-10 justify-center">
           <div
             v-for="project in projects.data"

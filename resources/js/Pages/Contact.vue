@@ -4,7 +4,7 @@
     <div class="bg-amber-50">
       <GuestLayout>
         <div id="main">
-          <h3 class="text-center text-7xl">Contact</h3>
+          <h3 class="text-center text-7xl pt-10">Contact</h3>
           <div class="h-screen flex flex-col justify-center items-center">
             <form class="block p-6 rounded-lg shadow-lg bg-white w-2/4">
               <div class="form-group mb-6">
