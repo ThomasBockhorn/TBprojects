@@ -10,6 +10,8 @@
         bg-white
         dark:bg-gray-800
         sm:flex-row
+        sticky
+        bottom-0
       "
     >
       <a

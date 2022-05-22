@@ -2,7 +2,7 @@
   <div>
     <Head title="Resume" />
     <GuestLayout>
-      <div id="main" class="mt-20">
+      <div id="main">
         <VuePdfEmbed :page="1" :source="'/pdf/TechResume2020.pdf'" />
       </div>
     </GuestLayout>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-center text-7xl">Profile</h3>
+    <h3 class="text-center text-7xl mt-10">Profile</h3>
     <div class="m-20">
       <div class="flex justify-center h-80 w-30 mb-8">
         <img

@@ -3,9 +3,9 @@
     <Head title="Contact" />
     <div class="bg-amber-50">
       <GuestLayout>
-        <div id="main" class="mt-20">
-          <h3 class="text-center text-7xl mt-5">Contact</h3>
-          <div class="mb-20 mt-20 flex flex-col justify-center items-center">
+        <div id="main">
+          <h3 class="text-center text-7xl">Contact</h3>
+          <div class="h-screen flex flex-col justify-center items-center">
             <form class="block p-6 rounded-lg shadow-lg bg-white w-2/4">
               <div class="form-group mb-6">
                 <input
