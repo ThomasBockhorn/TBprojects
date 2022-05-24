@@ -25286,14 +25286,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }, 8
   /* PROPS */
-  , ["class"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
-      'bg-amber-400': _ctx.$page.url === '/#skills'
-    }]),
-    href: "/#skills"
-  }, "Skills", 2
-  /* CLASS */
-  )])]);
+  , ["class"])])]);
 }
 
 /***/ }),

@@ -25,12 +25,6 @@
         href="/resume"
         >Resume</Link
       >
-      <a
-        class="block p-4 hover:bg-amber-400"
-        :class="{ 'bg-amber-400': $page.url === '/#skills' }"
-        href="/#skills"
-        >Skills</a
-      >
     </nav>
   </div>
 </template>
