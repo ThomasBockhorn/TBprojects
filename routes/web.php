@@ -35,7 +35,7 @@ Route::get('/resume', function () {
 
 //---------------- Admin Pages ---------------------------------------------//
 Route::get('/dashboard', function () {
-    $projects = Project::all();
+    $projects = Project::latest()->paginate(10);;
     return Inertia::render('Dashboard', ['projects' => $projects]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 

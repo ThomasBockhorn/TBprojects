@@ -23,6 +23,7 @@
               </p>
             </div>
           </div>
+          <Pagination />
         </div>
       </div>
     </GuestLayout>
@@ -32,6 +33,8 @@
 <script setup>
 import GuestLayout from "@/Layouts/Guest";
 import { Head } from "@inertiajs/inertia-vue3";
+import Pagination from "@/Components/Projects/Navigation/Pagination.vue";
+
 
 defineProps({
     projects: Object,
