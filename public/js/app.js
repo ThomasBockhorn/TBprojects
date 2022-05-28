@@ -25878,6 +25878,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["mr-1 mb-1 px-4 py-3 text-sm leading-4 border rounded hover:bg-amber-400 focus:bg-amber-400 bg-amber-200", {
         'bg-amber-400 text-black': project_link.active
       }]),
+      "preserve-scroll": "",
       href: project_link.url,
       innerHTML: project_link.label
     }, null, 8
