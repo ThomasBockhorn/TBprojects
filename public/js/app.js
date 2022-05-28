@@ -26107,7 +26107,7 @@ var _hoisted_6 = {
   "class": "shrink-0 flex items-center"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" TB ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Thomas B ");
 
 var _hoisted_8 = {
   "class": "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex"
