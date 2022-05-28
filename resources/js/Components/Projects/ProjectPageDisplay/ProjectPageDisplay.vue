@@ -22,7 +22,7 @@
               </p>
             </div>
           </div>
-          <Pagination />
+          <Pagination :project_links="projects.links"/>
         </div>
       </div>
     </div>
