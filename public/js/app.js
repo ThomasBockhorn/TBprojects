@@ -25150,7 +25150,7 @@ var _hoisted_1 = ["type"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", {
     type: $props.type,
-    "class": "inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150"
+    "class": "inline-flex items-center px-4 py-2 bg-amber-200 border border-black rounded-md font-semibold text-xs text-black uppercase tracking-widest hover:bg-amber-400 active:bg-amber-400 focus:outline-none focus:bg-amber-400 focus:shadow-outline-gray transition ease-in-out duration-150"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")], 8
   /* PROPS */
   , _hoisted_1);
@@ -26377,30 +26377,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800"
+  "class": "w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md bg-amber-50"
 };
 var _hoisted_2 = {
   "class": "px-6 py-4"
 };
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-  "class": "mt-1 text-xl font-medium text-center text-gray-600 dark:text-gray-200"
+  "class": "mt-1 text-xl font-medium text-center text-black"
 }, " Welcome Back ", -1
 /* HOISTED */
 );
 
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mt-1 text-center text-gray-500 dark:text-gray-400"
+  "class": "mt-1 text-center text-white"
 }, " Login or create account ", -1
 /* HOISTED */
 );
 
 var _hoisted_5 = {
-  "class": "flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-700"
+  "class": "flex items-center justify-center py-4 text-center bg-amber-50"
 };
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "text-sm text-gray-600 dark:text-gray-200"
+  "class": "text-sm text-black"
 }, "Don't have an account? ", -1
 /* HOISTED */
 );
@@ -26410,7 +26410,7 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
     href: "/register",
-    "class": "mx-2 text-sm font-bold text-blue-500 dark:text-blue-400 hover:underline"
+    "class": "mx-2 text-sm font-bold text-black bg-amber-50 hover:underline"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_7];
@@ -26659,7 +26659,7 @@ var _hoisted_5 = {
 };
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "ml-2 text-sm text-gray-600"
+  "class": "ml-2 text-sm text-black"
 }, "Remember me", -1
 /* HOISTED */
 );
