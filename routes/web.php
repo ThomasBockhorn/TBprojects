@@ -39,5 +39,12 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard', ['projects' => $projects]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/addProject', function() {
+    return Inertia::render('AddProject');
+})->middleware(['auth', 'verified'])->name('addProject');
+
+Route::get('/editProject', function() {
+    return Inertia::render('EditProject');
+})->middleware(['auth', 'verified'])->name('editProject');
 
 require __DIR__ . '/auth.php';
