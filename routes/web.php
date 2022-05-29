@@ -4,7 +4,7 @@ use Inertia\Inertia;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
-use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ProjectsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,20 +38,12 @@ Route::get('/resume', function () {
 
 //---------------- Admin Pages ---------------------------------------------//
 
-Route::resource('/projects', ProjectController::class)->middleware(['auth', 'verified']);
+Route::resource('/projects', ProjectsController::class)->middleware(['auth', 'verified']);
 
 
 Route::get('/dashboard', function () {
     $projects = Project::latest()->paginate(10);
     return Inertia::render('Dashboard', ['projects' => $projects]);
 })->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('/admin/projects/create', function() {
-    return Inertia::render('AddProject');
-})->middleware(['auth', 'verified'])->name('addProject');
-
-Route::get('/editProject', function() {
-    return Inertia::render('EditProject');
-})->middleware(['auth', 'verified'])->name('editProject');
 
 require __DIR__ . '/auth.php';

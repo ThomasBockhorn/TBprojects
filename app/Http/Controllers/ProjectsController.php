@@ -3,24 +3,21 @@
 namespace App\Http\Controllers;
 
 use Inertia\Inertia;
-use App\Models\Project;
 use Illuminate\Http\Request;
 
-class ProjectController extends Controller
+class ProjectsController extends Controller
 {
+    
     /**
-     * Display a listing of the resource.
+     * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function create()
     {
-        $projects = Project::latest()->paginate(10);
-
-        return Inertia::render('Project/Index', ['projects' => $projects]);
+        return Inertia::render('AddProject');
     }
 
-    
     /**
      * Store a newly created resource in storage.
      *
@@ -35,10 +32,10 @@ class ProjectController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Project  $project
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Project $project)
+    public function show($id)
     {
         //
     }
@@ -46,22 +43,22 @@ class ProjectController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Project  $project
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Project $project)
+    public function edit($id)
     {
-        //
+        return Inertia::render('EditProject');
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Project  $project
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Project $project)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -69,10 +66,10 @@ class ProjectController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Project  $project
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Project $project)
+    public function destroy($id)
     {
         //
     }
