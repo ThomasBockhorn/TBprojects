@@ -42,7 +42,7 @@ Route::resource('/projects', ProjectsController::class)->except(['index']);
 
 
 Route::get('/dashboard', function () {
-    $projects = Project::latest()->paginate(10);
+    $projects = Project::orderBy('id', 'asc')->paginate(10);
     return Inertia::render('Dashboard', ['projects' => $projects]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
