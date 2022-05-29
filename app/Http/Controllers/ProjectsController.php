@@ -3,10 +3,25 @@
 namespace App\Http\Controllers;
 
 use Inertia\Inertia;
+use App\Models\Project;
 use Illuminate\Http\Request;
+use App\Http\Requests\ProjectRequest;
 
 class ProjectsController extends Controller
 {
+    
+    
+    /**
+     * Instantiate a new controller instance
+     * 
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware(['auth', 'verified'])->except('index');
+
+    }
+
     
     /**
      * Show the form for creating a new resource.
@@ -24,9 +39,11 @@ class ProjectsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProjectRequest $request)
     {
-        //
+        Project::create($request->all());
+
+        return redirect()->route('dashboard');
     }
 
     /**

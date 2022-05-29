@@ -11,9 +11,9 @@
                 <h3 class="text-center text-7xl pt-10">Create A Project</h3>
                 <div class="h-screen flex flex-col justify-center items-center">
                   <form
-                    ref="form"
+                    method="post"
                     class="block p-6 rounded-lg shadow-lg bg-white w-2/4"
-                    @submit.prevent="sendProject"
+                    @submit.prevent="form.post(route('projects.store'))"
                   >
                     <div class="form-group mb-6">
                       <input
@@ -40,7 +40,7 @@
                         "
                         placeholder="Project Title"
                         name="project_title"
-                        v-model="project_title"
+                        v-model="form.project_title"
                       />
                     </div>
                     <div class="form-group mb-6">
@@ -68,7 +68,7 @@
                         "
                         placeholder="Project URL"
                         name="project_url"
-                        v-model="project_url"
+                        v-model="form.project_url"
                       />
                     </div>
                     <div class="form-group mb-6">
@@ -96,11 +96,11 @@
                         rows="3"
                         placeholder="Project Description"
                         name="project_description"
-                        v-model="project_description"
+                        v-model="form.project_description"
                       ></textarea>
                     </div>
 
-                    <input
+                    <button
                       type="submit"
                       class="
                         w-full
@@ -124,8 +124,8 @@
                         duration-150
                         ease-in-out
                       "
-                      value="Send"
-                    />
+                      :disabled="form.processing"
+                    >Send</button>
                   </form>
                 </div>
               </div>
@@ -140,22 +140,27 @@
 <script>
 import BreezeAuthenticatedLayout from "@/Layouts/Authenticated.vue";
 import { Head } from "@inertiajs/inertia-vue3";
+import { Inertia } from "@inertiajs/inertia";
+import { useForm } from "@inertiajs/inertia-vue3";
 
 export default {
   components: {
     BreezeAuthenticatedLayout,
     Head,
   },
-  data(){
-      return{
-          project_title: "",
-          project_url: "",
-          preoject_description: ""
-      }
+  setup(){
+    const form = useForm({
+      project_title: null,
+      project_url: null,
+      project_description: null
+    })
+
+    return { form };
   },
   methods:{
-      sendProject(){
-          
+     sendProject(){
+         form.post('/projects');
+         form.reset();
       }
   }
 };

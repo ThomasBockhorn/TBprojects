@@ -38,7 +38,7 @@ Route::get('/resume', function () {
 
 //---------------- Admin Pages ---------------------------------------------//
 
-Route::resource('/projects', ProjectsController::class)->middleware(['auth', 'verified']);
+Route::resource('/projects', ProjectsController::class)->except(['index']);
 
 
 Route::get('/dashboard', function () {
