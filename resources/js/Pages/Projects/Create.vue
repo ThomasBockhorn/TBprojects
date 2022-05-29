@@ -156,12 +156,6 @@ export default {
     })
 
     return { form };
-  },
-  methods:{
-     sendProject(){
-         form.post('/projects');
-         form.reset();
-      }
   }
 };
 </script>
