@@ -22,11 +22,14 @@ Route::get('/', function () {
     return Inertia::render('Welcome');
 });
 
-Route::resource('/projects', ProjectController::class);
-
 Route::get('/contact', function () {
     return Inertia::render('Contact');
 });
+
+Route::get('/portfolio', function(){
+    $projects = Project::latest()->paginate(10);
+    return Inertia::render('Portfolio', ['projects' => $projects]);
+})->name('portfolio');
 
 Route::get('/resume', function () {
     return Inertia::render('Resume');
@@ -34,12 +37,16 @@ Route::get('/resume', function () {
 
 
 //---------------- Admin Pages ---------------------------------------------//
+
+Route::resource('/projects', ProjectController::class)->middleware(['auth', 'verified']);
+
+
 Route::get('/dashboard', function () {
-    $projects = Project::latest()->paginate(10);;
+    $projects = Project::latest()->paginate(10);
     return Inertia::render('Dashboard', ['projects' => $projects]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/addProject', function() {
+Route::get('/admin/projects/create', function() {
     return Inertia::render('AddProject');
 })->middleware(['auth', 'verified'])->name('addProject');
 

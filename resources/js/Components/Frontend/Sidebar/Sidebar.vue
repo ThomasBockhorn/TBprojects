@@ -10,7 +10,7 @@
       <Link
         class="block p-4 hover:bg-amber-400"
         :class="{ 'bg-amber-400': $page.url.startsWith('/projects') }"
-        href="/projects"
+        href="/portfolio"
         >Projects</Link
       >
       <Link
