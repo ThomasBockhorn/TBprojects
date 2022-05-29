@@ -9,7 +9,7 @@
       >
       <Link
         class="block p-4 hover:bg-amber-400"
-        :class="{ 'bg-amber-400': $page.url.startsWith('/projects') }"
+        :class="{ 'bg-amber-400': $page.url.startsWith('/portfolio') }"
         href="/portfolio"
         >Projects</Link
       >

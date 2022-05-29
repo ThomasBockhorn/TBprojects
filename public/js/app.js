@@ -25403,7 +25403,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["class"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["block p-4 hover:bg-amber-400", {
-      'bg-amber-400': _ctx.$page.url.startsWith('/projects')
+      'bg-amber-400': _ctx.$page.url.startsWith('/portfolio')
     }]),
     href: "/portfolio"
   }, {
