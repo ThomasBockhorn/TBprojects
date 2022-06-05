@@ -57,6 +57,7 @@
             >
               <Link
               :href="`/projects/${project.id}/edit`"
+                as="button"
                 class="
                   bg-amber-200
                   hover:bg-amber-400
