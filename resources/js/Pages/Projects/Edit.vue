@@ -7,7 +7,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="overflow-hidden sm:rounded-lg">
             <div class="p-6 bg-amber-50">
-              Edit Project
+              <h3 class="text-center text-7xl pt-10">Edit A Project</h3>
               <div class="h-screen flex flex-col justify-center items-center">
                 <form
                   method="post"
@@ -37,7 +37,7 @@
                         focus:border-blue-600
                         focus:outline-none
                       "
-                      placeholder="Project Title"
+                      :placeholder="project.project_title"
                       name="project_title"
                       v-model="form.project_title"
                     />
@@ -65,7 +65,7 @@
                         focus:border-blue-600
                         focus:outline-none
                       "
-                      placeholder="Project URL"
+                      :placeholder="project.project_url"
                       name="project_url"
                       v-model="form.project_url"
                     />
@@ -93,7 +93,7 @@
                         focus:outline-none
                       "
                       rows="3"
-                      placeholder="Project Description"
+                      :placeholder="project.project_description"
                       name="project_description"
                       v-model="form.project_description"
                     ></textarea>
@@ -139,12 +139,15 @@
 
 <script>
 import BreezeAuthenticatedLayout from "@/Layouts/Authenticated.vue";
-import { Head } from "@inertiajs/inertia-vue3";
+import { Head, useForm } from "@inertiajs/inertia-vue3";
 
 export default {
   components: {
     BreezeAuthenticatedLayout,
     Head,
+  },
+  props:{
+    project: Object
   },
   setup(){
     const form = useForm({

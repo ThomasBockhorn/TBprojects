@@ -55,7 +55,8 @@
               v-if="$page.props.auth.user"
               class="card-footer flex justify-center"
             >
-              <button
+              <Link
+              :href="`/projects/${project.id}/edit`"
                 class="
                   bg-amber-200
                   hover:bg-amber-400
@@ -68,7 +69,7 @@
                 "
               >
                 Edit
-              </button>
+              </Link>
               <button
                 class="
                   bg-amber-200
@@ -112,6 +113,9 @@
 
 <script setup>
 import Pagination from "@/Components/Projects/Navigation/Pagination.vue";
+import { Link } from "@inertiajs/inertia-vue3";
+
+
 
 defineProps({
   projects: Object,
