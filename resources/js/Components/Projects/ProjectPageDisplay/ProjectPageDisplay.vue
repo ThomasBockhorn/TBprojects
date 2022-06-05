@@ -70,7 +70,10 @@
               >
                 Edit
               </Link>
-              <button
+              <Link
+                :href="`/projects/${project.id}`"
+                method="delete"
+                as="button"
                 class="
                   bg-amber-200
                   hover:bg-amber-400
@@ -83,7 +86,7 @@
                 "
               >
                 Delete
-              </button>
+              </Link>
             </div>
             <div v-else class="flex justify-center">
               <button
@@ -111,15 +114,23 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import Pagination from "@/Components/Projects/Navigation/Pagination.vue";
 import { Link } from "@inertiajs/inertia-vue3";
 
+export default{
+  props:{
+    projects: Object
+  },
+  components: {
+    Pagination,
+    Link,
+  },
 
-
-defineProps({
+}
+/*defineProps({
   projects: Object,
-});
+});*/
 </script>
 
 <style scoped>
