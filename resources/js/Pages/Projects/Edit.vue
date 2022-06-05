@@ -12,7 +12,9 @@
                 <form
                   method="post"
                   class="block p-6 rounded-lg shadow-lg bg-white w-2/4"
-                  @submit.prevent="form.put(route('projects.update'))"
+                  @submit.prevent="
+                    form.put(route('projects.update', project.id))
+                  "
                 >
                   <div class="form-group mb-6">
                     <input
@@ -146,18 +148,19 @@ export default {
     BreezeAuthenticatedLayout,
     Head,
   },
-  props:{
-    project: Object
+  props: {
+    project: Object,
   },
-  setup(){
+  setup() {
     const form = useForm({
+      id: null,
       project_title: null,
       project_url: null,
-      project_description: null
-    })
+      project_description: null,
+    });
 
     return { form };
-  }
+  },
 };
 </script>
 

@@ -34,9 +34,9 @@ class ProjectsController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a new resource record
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param ProjectRequest $request
      * @return \Illuminate\Http\Response
      */
     public function store(ProjectRequest $request)
@@ -69,15 +69,17 @@ class ProjectsController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     *  Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param ProjectRequest $request
+     * @param Project $project
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ProjectRequest $request, Project $project)
     {
-        //
+        $project->update($request->all());
+
+        return redirect()->route('dashboard');
     }
 
     /**

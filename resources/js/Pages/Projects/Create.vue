@@ -139,9 +139,7 @@
 
 <script>
 import BreezeAuthenticatedLayout from "@/Layouts/Authenticated.vue";
-import { Head } from "@inertiajs/inertia-vue3";
-import { Inertia } from "@inertiajs/inertia";
-import { useForm } from "@inertiajs/inertia-vue3";
+import { Head, useForm } from "@inertiajs/inertia-vue3";
 
 export default {
   components: {
