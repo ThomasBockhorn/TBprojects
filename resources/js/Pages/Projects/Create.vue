@@ -93,7 +93,7 @@
                           focus:border-blue-600
                           focus:outline-none
                         "
-                        rows="3"
+                        rows="10"
                         placeholder="Project Description"
                         name="project_description"
                         v-model="form.project_description"

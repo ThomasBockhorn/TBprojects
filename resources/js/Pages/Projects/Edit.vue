@@ -92,7 +92,7 @@
                         focus:border-blue-600
                         focus:outline-none
                       "
-                      rows="3"
+                      rows="10"
                       :placeholder="project.project_description"
                       name="project_description"
                       v-model="form.project_description"
