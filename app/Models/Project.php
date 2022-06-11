@@ -10,4 +10,9 @@ class Project extends Model
     use HasFactory;
 
     protected $fillable = ['project_title', 'project_description', 'project_url'];
+
+    public function image()
+    {
+        return $this->hasOne('App\Models\Image::class');
+    }
 }

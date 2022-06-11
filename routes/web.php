@@ -4,6 +4,7 @@ use Inertia\Inertia;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProjectsController;
 
 /*
@@ -38,7 +39,8 @@ Route::get('/resume', function () {
 
 //---------------- Admin Pages ---------------------------------------------//
 
-Route::resource('/projects', ProjectsController::class)->except(['index']);
+Route::resource('/projects', ProjectsController::class)->except(['index', 'show']);
+Route::resource('/images', ImageController::class)->except(['show']);
 
 
 Route::get('/dashboard', function () {
