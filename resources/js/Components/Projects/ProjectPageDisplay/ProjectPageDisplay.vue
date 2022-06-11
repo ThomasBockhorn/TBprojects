@@ -129,9 +129,6 @@ export default{
   },
 
 }
-/*defineProps({
-  projects: Object,
-});*/
 </script>
 
 <style scoped>

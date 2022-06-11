@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Inertia\Inertia;
 use App\Models\Image;
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class ProjectImagesController extends Controller
@@ -39,7 +40,10 @@ class ProjectImagesController extends Controller
      */
     public function create()
     {
-        //
+        $projects = Project::orderBy('id', 'asc')->paginate(100);
+
+        return Inertia::render('ProjectImages/Create', ['projects' => $projects]);
+
     }
 
     /**
@@ -50,7 +54,16 @@ class ProjectImagesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'project_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+      
+       $imageName = time().'.'.$request->project_image->extension();  
+
+        $request->project_image->move(public_path('images'), $imageName);
+
+        return redirect()->route('dashboard');
+
     }
 
     /**
