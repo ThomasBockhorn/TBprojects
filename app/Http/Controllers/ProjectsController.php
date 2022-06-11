@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Inertia\Inertia;
 use App\Models\Project;
-use Illuminate\Http\Request;
 use App\Http\Requests\ProjectRequest;
 
 class ProjectsController extends Controller
@@ -18,7 +17,7 @@ class ProjectsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware(['auth', 'verified'])->except('index');
+        $this->middleware(['auth', 'verified']);
 
     }
 

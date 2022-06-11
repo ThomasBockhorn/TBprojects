@@ -1,11 +1,12 @@
 <?php
 
 use Inertia\Inertia;
+use App\Models\Image;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
-use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\ProjectImagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +29,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/portfolio', function(){
-    $projects = Project::latest()->paginate(10);
+    $$projects = Project::orderBy('id', 'asc')->paginate(10);
     return Inertia::render('Portfolio', ['projects' => $projects]);
 })->name('portfolio');
 
@@ -39,13 +40,12 @@ Route::get('/resume', function () {
 
 //---------------- Admin Pages ---------------------------------------------//
 
-Route::resource('/projects', ProjectsController::class)->except(['index', 'show']);
-Route::resource('/images', ImageController::class)->except(['show']);
-
-
 Route::get('/dashboard', function () {
     $projects = Project::orderBy('id', 'asc')->paginate(10);
     return Inertia::render('Dashboard', ['projects' => $projects]);
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::resource('/projects', ProjectsController::class)->except(['index', 'show']);
+Route::resource('/project-images', ProjectImagesController::class)->except(['show']);
 
 require __DIR__ . '/auth.php';

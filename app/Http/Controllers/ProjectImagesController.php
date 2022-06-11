@@ -2,11 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use Inertia\Inertia;
 use App\Models\Image;
 use Illuminate\Http\Request;
 
-class ImageController extends Controller
+class ProjectImagesController extends Controller
 {
+    
+    /**
+     * Instantiate a new controller instance
+     * 
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware(['auth', 'verified']);
+
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +27,9 @@ class ImageController extends Controller
      */
     public function index()
     {
-        //
+        $projectImages = Image::orderBy('id', 'asc')->paginate(10);
+
+        return Inertia::render('ProjectImages/Index', ['projectImages' => $projectImages]);
     }
 
     /**
