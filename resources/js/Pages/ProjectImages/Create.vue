@@ -39,13 +39,15 @@
                           focus:border-blue-600
                           focus:outline-none
                         "
+                        @change="onChange($event)"
                       >
                         <option>Choose a Project</option>
                         <option
                           v-for="project in projects.data"
                           :key="project.id"
+                          :value="project.id"
                         >
-                          {{ project.project_title }}
+                           {{ project.project_title }}
                         </option>
                       </select>
                     </div>
@@ -80,7 +82,7 @@
                         type="file"
                         name="project_image"
                         accept="image/png, image/jpg"
-                        @input="form.project_image = $event.target.files[0]"
+                        @input="form.image_url = $event.target.files[0]"
                       />
                     </div>
                     <button
@@ -135,10 +137,22 @@ export default {
   },
   setup(){
       const form = useForm({
-          project_image: null
+          image_url: null,
+         project_id: null
       })
 
       return { form };
+  }, 
+  data(){
+      return{
+          project_id: Number
+      }
+  },
+  methods: {
+      onChange(event){
+        this.project_id = event.target.value;
+        this.form.project_id = this.project_id;
+      }
   }
 };
 </script>

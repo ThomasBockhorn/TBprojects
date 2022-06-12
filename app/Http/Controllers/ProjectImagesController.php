@@ -55,12 +55,20 @@ class ProjectImagesController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'project_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image_url' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
       
-       $imageName = time().'.'.$request->project_image->extension();  
+       $imageName = time().'.'.$request->image_url->extension();  
 
-        $request->project_image->move(public_path('images'), $imageName);
+        $request->image_url->move(public_path('images'), $imageName);
+
+
+        $project_image = new Image;
+
+        $project_image->image_url = $imageName;
+        $project_image->project_id = $request->project_id;
+
+        $project_image->save();
 
         return redirect()->route('dashboard');
 
