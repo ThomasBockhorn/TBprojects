@@ -13,6 +13,6 @@ class Image extends Model
 
     public function project()
     {
-        return $this->belongsTo('App\Models\Project::class');
+        return $this->belongsTo(Project::class);
     }
 }

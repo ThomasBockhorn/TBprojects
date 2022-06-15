@@ -13,6 +13,6 @@ class Project extends Model
 
     public function image()
     {
-        return $this->hasOne('App\Models\Image::class');
+        return $this->hasOne(Image::class);
     }
 }

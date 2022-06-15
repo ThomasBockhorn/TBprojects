@@ -16,9 +16,13 @@ class ImageFactory extends Factory
      */
     public function definition()
     {
+        
         return [
-            'image_url' => $this->faker->imageUrl(),
-            'project_id' => \App\Models\Project::inRandomOrder()->first()->id
+            'image_url' => $this->faker->image('public/images',640,480,null,false),
+            'project_id' => function(){
+                $factory = Factory::factoryForModel(\App\Models\Project::class);
+                return $factory->create()->id;
+            }
         ];
     }
 }

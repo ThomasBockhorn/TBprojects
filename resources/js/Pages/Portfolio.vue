@@ -2,7 +2,7 @@
   <div class="bg-amber-50">
   <Head title="Projects" />
     <GuestLayout>
-      <ProjectPageDisplay  :projects="projects"/>
+      <ProjectPageDisplay  :projects="projects" :project_images="project_images"/>
     </GuestLayout>
   </div>
 </template>
@@ -14,6 +14,7 @@ import ProjectPageDisplay from "@/components/Projects/ProjectPageDisplay/Project
 
 defineProps({
     projects: Object,
+    project_images: Object
 });
 
 </script>

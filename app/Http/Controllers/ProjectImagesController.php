@@ -6,6 +6,7 @@ use Inertia\Inertia;
 use App\Models\Image;
 use App\Models\Project;
 use Illuminate\Http\Request;
+use App\Http\Requests\ProjectImagesRequest;
 
 class ProjectImagesController extends Controller
 {
@@ -52,11 +53,8 @@ class ProjectImagesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProjectImagesRequest $request)
     {
-        $request->validate([
-            'image_url' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
       
        $imageName = time().'.'.$request->image_url->extension();  
 

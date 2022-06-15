@@ -40,7 +40,7 @@
         >
           <img
             class="w-full card-img"
-            src="/img/card-top.jpg"
+            :src="`images/${project.image.image_url}`"
             alt="Sunset in the mountains"
           />
           <div class="px-6 py-4">
@@ -56,7 +56,7 @@
               class="card-footer flex justify-center"
             >
               <Link
-              :href="`/projects/${project.id}/edit`"
+                :href="`/projects/${project.id}/edit`"
                 as="button"
                 class="
                   bg-amber-200
@@ -119,16 +119,16 @@
 import Pagination from "@/Components/Projects/Navigation/Pagination.vue";
 import { Link } from "@inertiajs/inertia-vue3";
 
-export default{
-  props:{
-    projects: Object
+export default {
+  props: {
+    projects: Object,
+    project_images: Object,
   },
   components: {
     Pagination,
     Link,
   },
-
-}
+};
 </script>
 
 <style scoped>

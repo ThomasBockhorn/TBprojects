@@ -29,7 +29,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/portfolio', function(){
-    $$projects = Project::orderBy('id', 'asc')->paginate(10);
+    $projects = Project::with('image')->paginate(10);
     return Inertia::render('Portfolio', ['projects' => $projects]);
 })->name('portfolio');
 
@@ -41,7 +41,7 @@ Route::get('/resume', function () {
 //---------------- Admin Pages ---------------------------------------------//
 
 Route::get('/dashboard', function () {
-    $projects = Project::orderBy('id', 'asc')->paginate(10);
+    $projects = Project::with('image')->paginate(10);
     return Inertia::render('Dashboard', ['projects' => $projects]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
